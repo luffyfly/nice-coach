@@ -44,11 +44,94 @@ body {
 		border: solid 1px @memberBorderColor;
 		min-height: 200px;
 		background-color: @white;
+		padding: 0 15px;
 	}
 
 	.content {
 		padding: 15px;
-	}s
+
+		.steps {
+			.clearfix();
+			height: 110px;
+			width: 592px;
+			margin: 0 auto;
+			background: url("../img/steps.png") scroll no-repeat center top transparent;
+			margin-top: 32px;
+			.step {
+				width: 148px;
+				float: left;
+			}
+			a {
+				display: block;
+				height: 30px;
+				width: 120px;
+				margin: 15px;
+				text-align: center;
+				padding-top: 80px;
+			}
+		}
+
+		.my-location {
+			line-height: 20px;
+			padding: 15px 10px;
+			margin-top: 40px;
+			border: 1px solid @memberBorderColor;
+			a {
+				padding-left: 1em;
+			}
+		}
+	}
+
+	h3 {
+		background-color: #f1f1f1;
+		padding-left: 5px;
+	}
+}
+
+.around {
+	padding: 15px 0px;
+	.clearfix();
+	.around-school,
+	.around-base,
+	.around-team,
+	.around-coach {
+		float: left;
+		width: 159px;
+		overflow: hidden;
+	}
+
+	h3 {
+		font-size: 100%;
+		font-weight: bold;
+		background-color: #f1f1f1;
+		line-heght: 24px;
+		padding-left: 5px;
+	}
+
+	ul {
+		padding: 5px 0 0 5px;
+		list-style: square inside;
+		color: #4266b0;
+		li {
+			line-height: 24px;
+		}
+		
+	}
+}
+
+.my-neighbor {
+	h3 {
+		font-weight: normal;
+		font-size: 100%;
+		line-height: 32px;
+		color: @memberGrayText;
+		border: 1px solid @memberBorderColor;
+		
+		.more {
+			float: right;
+			margin-left: 20px;
+		}
+	}
 }
 
 .col-left {
