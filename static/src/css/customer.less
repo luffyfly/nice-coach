@@ -2,6 +2,7 @@
 @import "city-panel.less";
 @import "quick-menu.less";
 @import "search-panel.less";
+@import "menu.less";
 
 //消费者页面非活动字体颜色
 @notActiveColor: #BEBEBE;
@@ -32,3 +33,29 @@ body {
 .search-panel {
 	margin-left: 18px;
 }
+
+.col-main {
+	padding: 0 140px;
+	min-height: 200px;
+	float: left;
+	width: 700px;
+	.border {
+		.border-radius(5px);
+		border: solid 1px @memberBorderColor;
+		min-height: 200px;
+		background-color: @white;
+	}
+
+	.content {
+		padding: 15px;
+	}s
+}
+
+.col-left {
+	margin-left: -100%;
+}
+
+.col-right {
+	margin-right: -100%;
+}
+
