@@ -1,0 +1,32 @@
+.menu {
+	.item {
+		height: 50px;
+		width: 60px;
+		margin: 14px auto;
+		a{
+			display: block;
+			height: 50px;
+			text-align: center;
+			padding-top: 0px;
+			font-weight: bold;
+			text-decoration: none;
+			color: @memberGrayText;
+
+			.icon {
+				.background-png("../../img/home.png");
+				margin: 0 auto;
+				display: block;
+				width: 26px;
+				height: 22px;
+			}
+			
+		}
+
+		a:hover {
+			color: @memberRedText;
+		}
+	}
+	.active a{
+			color: @memberRedText;
+	}
+}
