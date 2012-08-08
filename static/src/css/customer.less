@@ -3,6 +3,7 @@
 @import "quick-menu.less";
 @import "search-panel.less";
 @import "menu.less";
+@import "footer.less";
 
 //消费者页面非活动字体颜色
 @notActiveColor: #BEBEBE;
@@ -10,6 +11,10 @@
 
 body {
 	background-color: @backgroundColorOfCustomer;
+}
+
+a {
+	color: @memberLinkColor;
 }
 
 .navbar {
@@ -35,56 +40,73 @@ body {
 }
 
 .col-main {
-	padding: 0 140px;
 	min-height: 200px;
 	float: left;
-	width: 700px;
+	width: 100%;
 	.border {
 		.border-radius(5px);
 		border: solid 1px @memberBorderColor;
 		min-height: 200px;
 		background-color: @white;
-		padding: 0 15px;
+		padding: 20px 15px;
 	}
-
 	.content {
-		padding: 15px;
-
-		.steps {
-			.clearfix();
-			height: 110px;
-			width: 592px;
-			margin: 0 auto;
-			background: url("../img/steps.png") scroll no-repeat center top transparent;
-			margin-top: 32px;
-			.step {
-				width: 148px;
-				float: left;
-			}
-			a {
-				display: block;
-				height: 30px;
-				width: 120px;
-				margin: 15px;
-				text-align: center;
-				padding-top: 80px;
-			}
-		}
-
-		.my-location {
-			line-height: 20px;
-			padding: 15px 10px;
-			margin-top: 40px;
-			border: 1px solid @memberBorderColor;
-			a {
-				padding-left: 1em;
-			}
-		}
+		padding: 0 200px 0 140px;
+		zoom: 1;
 	}
 
 	h3 {
 		background-color: #f1f1f1;
 		padding-left: 5px;
+	}
+	zoom: 1;
+}
+
+.col-left {
+	margin-left: -100%;
+	width: 140px;
+	zoom: 1;
+	float: left;
+}
+
+.col-right {
+	margin-left: -190px;
+	width: 190px;
+	zoom: 1;
+	float: right;
+}
+
+
+.content {
+	.steps {
+		.clearfix();
+		height: 110px;
+		width: 592px;
+		margin: 0 auto;
+		background: url("../img/steps.png") scroll no-repeat center top transparent;
+		margin-top: 15px;
+		.step {
+			width: 148px;
+			float: left;
+		}
+		a {
+			display: block;
+			height: 30px;
+			width: 120px;
+			margin: 15px;
+			text-align: center;
+			padding-top: 80px;
+		}
+	}
+
+	.my-location {
+		line-height: 20px;
+		padding: 15px 10px;
+		margin-top: 40px;
+		border: 1px solid @memberBorderColor;
+		a {
+			padding-left: 1em;
+		}
 	}
 }
 
@@ -96,7 +118,7 @@ body {
 	.around-team,
 	.around-coach {
 		float: left;
-		width: 159px;
+		width: 152px;
 		overflow: hidden;
 	}
 
@@ -120,6 +142,7 @@ body {
 }
 
 .my-neighbor {
+	.clearfix();
 	h3 {
 		font-weight: normal;
 		font-size: 100%;
@@ -129,16 +152,98 @@ body {
 		
 		.more {
 			float: right;
-			margin-left: 20px;
+			margin-right: 20px;
+			font-size: 10px;
+		}
+	}
+
+	ul {
+		padding: 15px 20px;
+
+		li {
+			float: left;
+			width: 140px;
+			text-align: center;
+			line-height: 20px;
+			a.member {
+				display: block;
+				
+			}
+
+			a.school {
+				font-weight: bold;
+			}
 		}
 	}
 }
 
-.col-left {
-	margin-left: -100%;
+
+.news {
+	margin-top: 10px;
+	padding: 5px;
+	
+	h2 {
+		font-size: 100%;
+		font-weight: bold;
+	}
+	
+	.more {
+		font-size: 10px;
+		font-weight: normal;
+	}
+
+	li {
+		padding-left: 5px;
+		a {
+			color: #231f20;
+		}
+	}
 }
 
-.col-right {
-	margin-right: -100%;
-}
+.service {
+	padding: 10px 10px 15px 0px;
+	line-height: 24px;
+	border: solid 1px #D0D0D0;
+	
+	border-left: none;
+	border-right: none;
+	.hotline {
+		.icon {
+			.background-png("../img/hotline.png",left);
+			display: block;
+			float: left;
+			width: 19px;
+			height: 28px;
+			margin-left: -90px;
+		}
+		padding-left: 90px;
+	}
+	.worktime {
+		padding-left: 90px;
+		.icon {
+			.background-png("../img/worktime.png", left);
+			width: 24px;
+			height: 23px;
+			display: block;
+			float: left;
+			margin-left: -90px;
+		}
+		
+		em {
+			font-weight: bold;
+			color: #f7941d;
+		}
+		margin-top: 10px;
+	}
+	span {
+			margin-left: -70px;
+			display: block;
+			width: 70px;
+			text-align: right;
+			float: left;
+		}
 
+		em {
+			font-style: normal;
+		}
+}
