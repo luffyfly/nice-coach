@@ -1,3 +1,9 @@
+/* 
+	spritemapper.output_css = customer.css
+	spritemapper.output_image = customer-sprite.png
+	spritemapper.padding = 5
+	spritemapper.base_url = ../../static/img/
+ */
 @import "common.less";
 @import "city-panel.less";
 @import "quick-menu.less";
@@ -18,7 +24,7 @@ a {
 }
 
 .logo  {
-	.background-png("../img/logo.png");
+	.css-sprite("../img/logo.png");
 	float: left;
 	width: 155px;
 	height: 40px;
@@ -161,9 +167,7 @@ a {
 		border: 1px solid @memberBorderColor;
 		
 		.more {
-			float: right;
 			margin-right: 20px;
-			font-size: 10px;
 		}
 		.clearfix();
 	}
@@ -200,7 +204,6 @@ a {
 	}
 	
 	.more {
-		font-size: 10px;
 		font-weight: normal;
 	}
 
@@ -221,7 +224,7 @@ a {
 	border-right: none;
 	.hotline {
 		.icon {
-			.background-png("../img/hotline.png",left);
+			.css-sprite("../img/hotline.png");
 			display: block;
 			float: left;
 			width: 19px;
@@ -233,7 +236,7 @@ a {
 	.worktime {
 		padding-left: 90px;
 		.icon {
-			.background-png("../img/worktime.png", left);
+			.css-sprite("../img/worktime.png");
 			width: 24px;
 			height: 23px;
 			display: block;
