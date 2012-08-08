@@ -29,8 +29,12 @@ ul {
 	margin-top: 30px;
 }
 
-.background-png(@path, @left: center, @top: center) {
-	background: url("@{path}") scroll no-repeat @left @top transparent;
+.background-png(@path, @left: center, @top: center, @repeat: no-repeat) {
+	background: url("@{path}") scroll @repeat @left @top transparent;
+}
+
+.background-png-x(@path, @left: center, @top: center) {
+	background: url("@{path}") scroll repeat-x @left @top transparent;
 }
 
 .center {

@@ -17,6 +17,13 @@ a {
 	color: @memberLinkColor;
 }
 
+.logo  {
+	.background-png("../img/logo.png");
+	float: left;
+	width: 155px;
+	height: 40px;
+}
+
 .navbar {
 	.navbar-inner {
 		line-height: 30px;
@@ -104,9 +111,12 @@ a {
 		padding: 15px 10px;
 		margin-top: 40px;
 		border: 1px solid @memberBorderColor;
+		.background-png-x("../img/repeat.png");
+
 		a {
 			padding-left: 1em;
 		}
+		
 	}
 }
 
@@ -155,6 +165,7 @@ a {
 			margin-right: 20px;
 			font-size: 10px;
 		}
+		.clearfix();
 	}
 
 	ul {
@@ -184,6 +195,7 @@ a {
 	
 	h2 {
 		font-size: 100%;
+		.clearfix();
 		font-weight: bold;
 	}
 	
