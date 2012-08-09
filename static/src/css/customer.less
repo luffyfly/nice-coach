@@ -48,6 +48,17 @@ a {
 	}
 }
 
+.portrait {
+	width: 170px;
+	float: right;
+	margin-right: 10px;
+	vertical-align: bottom;
+
+	a {
+		vertical-align: bottom;
+	}
+}
+
 .search-panel {
 	margin-left: 18px;
 }
@@ -62,6 +73,15 @@ a {
 		min-height: 200px;
 		background-color: @white;
 		padding: 20px 15px;
+		position: relative;
+		.left-arrow {
+			width: 12px;
+			height: 29px;
+			.css-sprite("../img/larrow.png");
+			position: absolute;
+			top: 40px;
+			left: -12px;
+		}
 	}
 	.content {
 		padding: 0 200px 0 140px;
