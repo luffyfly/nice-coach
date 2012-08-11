@@ -63,136 +63,104 @@
 			<div class="col-main">
 				<div class="content">
 					<div class="border">
-						<div class="left-arrow">
-
-						</div>
-						<ul class="steps">
-							<li class="step">
-								<a href="#">
-									确定您的位置
-								</a>
-							</li>
-							
-							<li class="step">
-								<a href="#">
-									确定您所需要的服务
-								</a>
-							</li>
-							
-							<li class="step">
-								<a href="#">
-									在线预约服务
-								</a>
-							</li>
-							
-							<li class="step">
-								<a href="#">
-									线下享受服务
-								</a>
-							</li>
-
+						<div class="left-arrow"></div>
+						<ul class="nav nav-tabs">
+						  <li class=" active "><a href="#profile" data-toggle="tab">基本资料</a></li>
+						  <li class=""><a href="#location" data-toggle="tab">我的位置</a></li>
+						  <li class=""><a href="#location" data-toggle="tab">修改密码</a></li>
 						</ul>
 
-						<div class="my-location">
-							我的位置：浦东新区闵行区浦江镇浦申路633弄 <a href="#" >[修改]</a>
-						</div>
+						<div class="tab-pane active" id="addCategory">
+							<form class="form-horizontal">
+							  <fieldset>
+								  <div class="control-group">
+									<label class="control-label" for=""><span class="required">*</span>真实姓名：</label>
+									<div class="controls">
+										<input type="text" name="name" class="" id="" value="">
+									</div>
+								  </div>
 
-						<div class="around">
-							<div class="around-school">
-								<h3>周边的驾校</h3>
-								<ul>
-									<li>齐爱驾校</li>
-									<li>齐爱驾校</li>
-									<li>齐爱驾校</li>
-									<li>齐爱驾校</li>
-									<li>齐爱驾校</li>
+								  <div class="control-group">
+									<label class="control-label" for=""><span class="required">*</span>性别：</label>
+									<div class="controls">
+										<input type="radio" name="sex" class="" id="" value="male">男
+										<input type="radio" name="sex" class="" id="" value="female">女
+									</div>
+								  </div>
 
-								</ul>
-							</div>
-							<div class="around-team">
-								<h3>周边的学车团队</h3>
-								<ul>
-									<li>齐爱驾校</li>
-									<li>齐爱驾校</li>
-									<li>齐爱驾校</li>
-									<li>齐爱驾校</li>
-									<li>齐爱驾校</li>
+								  <div class="control-group">
+									<label class="control-label" for=""><span class="required">*</span>手机号码：</label>
+									<div class="controls">
+										<input type="text" name="phone" class="" id="" value="">
+									</div>
+								  </div>
 
-								</ul>
-							</div>
-							<div class="around-base">
-								<h3>周边的学车基地</h3>
-								<ul>
-									<li>齐爱驾校</li>
-									<li>齐爱驾校</li>
-									<li>齐爱驾校</li>
-									<li>齐爱驾校</li>
-									<li>齐爱驾校</li>
+								  <div class="control-group">
+									<label class="control-label" for="">备用电话：</label>
+									<div class="controls">
+										<input type="text" name="spare_phone" class="" id="" value="">
+									</div>
+								  </div>
 
-								</ul>
-							</div>
-							<div class="around-coach">
-								<h3>周边的好教练</h3>
-								<ul>
-									<li>齐爱驾校</li>
-									<li>齐爱驾校</li>
-									<li>齐爱驾校</li>
-									<li>齐爱驾校</li>
-									<li>齐爱驾校</li>
+								  <div class="control-group">
+									<label class="control-label" for="">昵称：</label>
+									<div class="controls">
+										<input type="text" name="nick" class="" id="" value="">
+									</div>
+								  </div>
 
-								</ul>
-							</div>
-						</div>
+								  <div class="control-group">
+									<label class="control-label" for="">出生年月：</label>
+									<div class="controls">
+										<select name="year">
+											
+										</select>
+										<select name="month">
+											
+										</select>
+									</div>
+								  </div>
 
-						<div class="my-neighbor">
-							<h3>
-								<span class="pull-left">我的邻居</span><a class="more" href="#">更多>></a>
-							</h3>
-							<ul>
-								<li>
-									<a class="member" href="#">
-										<img width="66px" height="65px" src="" alt="" />
-										<div>wangling</div>
-									</a>
+								  <div class="control-group">
+									<label class="control-label" for="">邮箱：</label>
+									<div class="controls">
+										<input type="text" name="email" class="" id="" value="">
+									</div>
+								  </div>
+								  
+								  <div class="control-group">
+									<label class="control-label" for="">家乡：</label>
+									<div class="controls">
+										<select name="hometown-province">
+											
+										</select>
+										<select name="hometown-city">
+											
+										</select>
+									</div>
+								  </div>
 
-									<span>预约了<a class="school" href="">齐爱驾校</a></span>
-								</li>
+								  <div class="control-group">
+									<label class="control-label" for="">先所在城市：</label>
+									<div class="controls">
+										<select name="now-province">
+											
+										</select>
+										<select name="now-city">
+											
+										</select>
+									</div>
+								  </div>
 
-								<li>
-									<a class="member" href="#">
-										<img width="66px" height="65px" src="" alt="" />
-										<div>wangling</div>
-									</a>
-
-									<span>预约了<a class="school" href="">齐爱驾校</a></span>
-								</li>
-
-								<li>
-									<a class="member" href="#">
-										<img width="66px" height="65px" src="" alt="" />
-										<div>wangling</div>
-									</a>
-
-									<span>预约了<a class="school" href="">齐爱驾校</a></span>
-								</li>
-
-								<li>
-									<a class="member" href="#">
-										<img width="66px" height="65px" src="" alt="" />
-										<div>wangling</div>
-									</a>
-
-									<span>预约了<a class="school" href="">齐爱驾校</a></span>
-								</li>
-
-								
-							</ul>
-
+								  <div class="form-actions">
+									<input type="submit" name="submitButton" class="btn btn-primary" value="保存">
+								  </div>
+							  </fieldset>
+							</form>
 						</div>
 					</div> <!-- /border -->
 				</div> <!-- /content -->
 			</div><!-- /col-main-->
-
 
 			<div class="col-left">
 				<ul class="menu">
