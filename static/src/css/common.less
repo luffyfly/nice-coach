@@ -1,6 +1,21 @@
-@import "bootstrap/variables.less";
+// CSS Reset
+@import "bootstrap/reset.less";
+
+// Core variables and mixins
+@import "bootstrap/variables.less"; // Modify this for custom colors, font-sizes, etc
 @import "bootstrap/mixins.less";
+
+// Grid system and page structure
+@import "bootstrap/scaffolding.less";
+@import "bootstrap/grid.less";
+@import "bootstrap/layouts.less";
+
+// Utility classes
+@import "bootstrap/utilities.less"; // Has to be last to override when necessary
+
 @import "variables.less";
+
+@import "bootstrap-fix.less";
 
 .inline-block {
 	display: inline-block;
@@ -13,10 +28,6 @@
 	min-height: 1px;
 }
 
-ul {
-	list-style: none;
-	margin: 0;
-}
 
 .mt5 {
 	margin-top: 5px;
@@ -54,6 +65,12 @@ ul {
 	margin: 0 auto;
 }
 
+.more {
+	font-weigth: normal;
+	font-size: 9px;
+	color: #36C;
+}
+
 a {
 	color: #000;
 	text-decoration: none;
@@ -67,16 +84,14 @@ a:hover {
 	float: right;
 }
 
-img {
-	border: none;
+
+
+//form sytles
+//一行中存在两个select或者input时，控件的宽度
+.twin {
+	width: 108px;
 }
 
-.more {
-	font-weigth: normal;
-	font-size: 9px;
-	color: #36C;
-}
-
-li {
-	line-height: 24px;
+.required {
+	color: #dd4b39;
 }

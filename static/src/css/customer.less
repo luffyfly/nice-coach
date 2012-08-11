@@ -5,6 +5,18 @@
 	spritemapper.base_url = ../../static/img/
  */
 @import "common.less";
+
+@import "bootstrap/navs.less";
+@import "bootstrap/navbar.less";
+@import "bootstrap/forms.less";
+
+@import "bootstrap/button-groups.less";
+@impprt "bootstrap/buttons.less";
+
+@import "bootstrap/alerts.less"; // Note: alerts share common CSS with buttons and thus have styles in buttons.less
+
+
+
 @import "city-panel.less";
 @import "quick-menu.less";
 @import "search-panel.less";
@@ -34,6 +46,8 @@ a {
 	.navbar-inner {
 		line-height: 30px;
 		height: 30px;
+		min-height: 30px;
+		background-image: none;
 		.border-radius(0px);
 		background-color: #6C6C6C;
 
@@ -49,7 +63,7 @@ a {
 }
 
 .portrait {
-	width: 170px;
+	width: 180px;
 	float: right;
 	margin-right: 10px;
 	vertical-align: bottom;
@@ -161,9 +175,8 @@ a {
 	h3 {
 		font-size: 100%;
 		font-weight: bold;
-		background-color: #f1f1f1;
-		line-heght: 24px;
-		padding-left: 5px;
+		line-height: 18px;
+		padding: 5px;
 	}
 
 	ul {
